@@ -1,0 +1,119 @@
+/* ============= COULEURS FÉMININES 2025 ============= */
+:root {
+  --bg: #FDF4F8;          /* Fond très doux rosé */
+  --primary: #D81B60;      /* Rose-magenta vif */
+  --accent: #E8C7E8;       /* Lavande-blush */
+  --text: #1A0F2A;         /* Texte presque noir violet */
+  --light: #FFFFFF;
+  --hero-bg: url('https://images.unsplash.com/photo-1553356084-58ef4a67b2a7?ixlib=rb-4.0.3&auto=format&fit=crop&q=80') center/cover no-repeat;
+}
+
+* { margin:0; padding:0; box-sizing:border-box; }
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+}
+
+/* ============= TYPO ============= */
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 6.5rem;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(90deg, #D81B60, #E8C7E8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.8rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: var(--text);
+}
+p { font-size: 1.25rem; color: #444; }
+
+/* ============= HERO ============= */
+.hero-section {
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.65)), var(--hero-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+.hero-content p {
+  font-size: 1.7rem;
+  font-weight: 300;
+  margin: 1.5rem 0;
+}
+.btn {
+  display: inline-block;
+  padding: 18px 50px;
+  background: var(--primary);
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: all 0.4s;
+  box-shadow: 0 10px 30px rgba(216,27,96,0.3);
+}
+.btn:hover {
+  transform: translateY(-8px);
+  background: #C2185B;
+  box-shadow: 0 20px 40px rgba(216,27,96,0.4);
+}
+
+/* ============= SECTIONS ============= */
+.section {
+  padding: 130px 10%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+.bg-light { background: var(--light); border-radius: 24px; margin: 40px auto; padding: 80px 10%; }
+
+/* ============= PORTFOLIO LINK ============= */
+.big-link {
+  display: inline-block;
+  margin: 40px 0;
+  font-size: 2rem;
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-bottom: 3px solid var(--accent);
+}
+.big-link:hover { color: #C2185B; border-color: var(--primary); }
+
+/* ============= FOOTER ============= */
+footer {
+  background: var(--accent);
+  color: var(--text);
+  text-align: center;
+  padding: 70px 20px;
+  font-size: 1rem;
+}
+
+/* ============= ANIMATIONS ============= */
+.fade-in {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.9s ease-out;
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ============= RESPONSIVE ============= */
+@media (max-width: 768px) {
+  h1 { font-size: 4.5rem; }
+  h2 { font-size: 3rem; }
+  .section { padding: 90px 5%; }
+  .big-link { font-size: 1.6rem; }
+}

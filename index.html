@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio - Prénom NOM | Designer</title>
+  <meta name="description" content="Portfolio de Prénom NOM - Designer graphique & UX/UI - Candidatures écoles 2026"/>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <header class="hero-section">
+    <div class="hero-content">
+      <h1>Prénom NOM</h1>
+      <p>Designer Graphique & UX/UI</p>
+      <a href="#portfolio" class="btn">Découvrir mon portfolio</a>
+    </div>
+  </header>
+
+  <section id="about" class="section fade-in">
+    <h2>À propos</h2>
+    <p class="text-center">
+      Passionnée de design depuis toujours, je crée des univers visuels doux, modernes et pleins d’émotions.<br><br>
+      Actuellement en terminale, je candidate dans les plus belles écoles d’art et de design pour la rentrée 2026.
+    </p>
+  </section>
+
+  <section id="portfolio" class="section bg-light fade-in">
+    <h2>Mon Portfolio</h2>
+    <div class="portfolio-big-link">
+      <p>Tous mes projets (book PDF + travaux complets) sont ici :</p>
+      <a href="https://www.behance.net/tonprofil" target="_blank" class="big-link">
+        → Ouvrir mon portfolio complet ←
+      </a>
+      <small style="display:block; margin-top:20px; color:#888;">
+        Remplace par ton lien Behance / Google Drive / PDF
+      </small>
+    </div>
+  </section>
+
+  <section id="contact" class="section fade-in">
+    <h2>Contact</h2>
+    <p class="text-center">
+      hello@prenomnom.com<br>
+      06 • • • • • • • •
+    </p>
+  </section>
+
+  <footer>
+    <p>© 2025 Prénom NOM — Fait avec amour & pixels ♡</p>
+  </footer>
+
+  <script>
+    document.addEventListener("scroll", function() {
+      document.querySelectorAll('.fade-in').forEach(el => {
+        if (el.getBoundingClientRect().top < window.innerHeight - 100) {
+          el.classList.add('visible');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
