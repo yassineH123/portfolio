@@ -3,56 +3,135 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Portfolio - Prénom NOM | Designer</title>
-  <meta name="description" content="Portfolio de Prénom NOM - Designer graphique & UX/UI - Candidatures écoles 2026"/>
+  <title>Aya Zerouali | Fashion Designer</title>
+  <meta name="description" content="Portfolio d'Aya Zerouali – Étudiante en Design de Mode – Casa Moda Academy, Casablanca"/>
 
+  <!-- Polices -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Ton CSS -->
   <link rel="stylesheet" href="index.css">
+
 </head>
 <body>
 
-  <header class="hero-section">
+  <!-- HERO -->
+  <header class="hero">
     <div class="hero-content">
-      <h1>Prénom NOM</h1>
-      <p>Designer Graphique & UX/UI</p>
-      <a href="#portfolio" class="btn">Découvrir mon portfolio</a>
+      <div class="hero-circle">
+        <img src="photo-aya.jpg" alt="Aya Zerouali" class="hero-photo">
+      </div>
+      <h1>AYA ZEROUALI</h1>
+      <p class="subtitle">FASHION DESIGNER</p>
+      <div class="contact-header">
+        <p><i class="fas fa-envelope"></i> aya.zerouali.2006@gmail.com</p>
+        <p><i class="fas fa-phone"></i> +212-690-311-583</p>
+        <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/aya-zerouali-pro" target="_blank">linkedin.com/in/aya-zerouali-pro</a></p>
+      </div>
+      <a href="#bio" class="btn">Découvrir mon univers</a>
     </div>
   </header>
 
-  <section id="about" class="section fade-in">
-    <h2>À propos</h2>
-    <p class="text-center">
-      Passionnée de design depuis toujours, je crée des univers visuels doux, modernes et pleins d’émotions.<br><br>
-      Actuellement en terminale, je candidate dans les plus belles écoles d’art et de design pour la rentrée 2026.
-    </p>
-  </section>
+  <!-- BIO -->
+  <section id="bio" class="section fade-in">
+    <div class="container">
+      <h2>À propos</h2>
+      <p class="bio-text">
+        Hi! I’m Aya Zerouali, an undergraduate fashion design student at Casa Moda Academy in Morocco. 
+        I’m passionate about transforming creative ideas into tangible designs, blending fashion with graphic art to create bold, meaningful pieces.<br><br>
 
-  <section id="portfolio" class="section bg-light fade-in">
-    <h2>Mon Portfolio</h2>
-    <div class="portfolio-big-link">
-      <p>Tous mes projets (book PDF + travaux complets) sont ici :</p>
-      <a href="https://www.behance.net/tonprofil" target="_blank" class="big-link">
-        → Ouvrir mon portfolio complet ←
-      </a>
-      <small style="display:block; margin-top:20px; color:#888;">
-        Remplace par ton lien Behance / Google Drive / PDF
-      </small>
+        My design style draws from diverse cultures and aesthetics, capturing life’s little details and turning them into cinematic memories. 
+        I approach every project with curiosity, adaptability, and a drive to learn from new challenges.<br><br>
+
+        I believe fashion is more than clothing — it’s a story told through texture, color, and form. 
+        I’m currently seeking opportunities to showcase my work, connect with visionary minds, and grow as both a designer and a storyteller. 
+        One of my biggest ambitions is to gain international experience, whether through further studies or professional opportunities, 
+        to immerse myself in diverse creative environments and push the limits of my imagination.
+      </p>
     </div>
   </section>
 
-  <section id="contact" class="section fade-in">
-    <h2>Contact</h2>
-    <p class="text-center">
-      hello@prenomnom.com<br>
-      06 • • • • • • • •
-    </p>
+  <!-- COMPÉTENCES -->
+  <section class="section skills-section fade-in">
+    <div class="container">
+      <h2>Mes Compétences</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>Fashion Design & Construction</h3>
+          <ul>
+            <li>Technical drawing & technical sheets</li>
+            <li>Moulage, sewing, pattern making</li>
+            <li>Knowledge of textiles & embellishment techniques</li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <h3>Sketching & Illustration</h3>
+          <ul>
+            <li>Hand drawing & digital sketching</li>
+            <li>Photomontage, collages</li>
+            <li>Moodboard creation</li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <h3>Software & Tools</h3>
+          <ul>
+            <li>Adobe Photoshop, Illustrator, InDesign, Lightroom, Premiere Pro</li>
+            <li>CLO3D (certified 2025), Lectra</li>
+            <li>Canva, CapCut, Microsoft Office</li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <h3>Collection & Project Management</h3>
+          <ul>
+            <li>Collection organization (real & 3D showrooms)</li>
+            <li>Event & showroom management</li>
+            <li>5S, 7M, SWOT, PDCA, brainstorming</li>
+            <li>Entrepreneurial skills, leadership & teamwork</li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </section>
 
+  <!-- CV -->
+  <section id="cv" class="section cv-section fade-in">
+    <div class="container">
+      <h2>Mon CV</h2>
+      <div class="cv-wrapper">
+        <iframe src="Aya ZEROUALI CV nv 2025.pdf" class="cv-iframe" title="CV Aya Zerouali"></iframe>
+      </div>
+      <a href="Aya ZEROUALI CV nv 2025.pdf" download class="btn download-btn">
+        <i class="fas fa-download"></i> Télécharger mon CV (PDF)
+      </a>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact-section fade-in">
+    <div class="container">
+      <h2>Contact</h2>
+      <div class="contact-grid">
+        <p><i class="fas fa-envelope"></i> aya.zerouali.2006@gmail.com</p>
+        <p><i class="fas fa-phone"></i> +212 690 311 583</p>
+        <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/aya-zerouali-pro" target="_blank">linkedin.com/in/aya-zerouali-pro</a></p>
+      </div>
+      <div class="qr-code">
+        <img src="qr-code.png" alt="QR Code LinkedIn">
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
   <footer>
-    <p>© 2025 Prénom NOM — Fait avec amour & pixels ♡</p>
+    <p>© 2025 Aya Zerouali — Made with passion & couture ♡</p>
   </footer>
 
   <script>
+    // Animation au scroll
     document.addEventListener("scroll", function() {
       document.querySelectorAll('.fade-in').forEach(el => {
         if (el.getBoundingClientRect().top < window.innerHeight - 100) {
